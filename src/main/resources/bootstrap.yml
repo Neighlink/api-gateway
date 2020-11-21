@@ -1,10 +1,20 @@
-spring:
-  application:
-    name: api-gateway
-  cloud:
-    config:
-      uri: http://localhost:8081
-      username: root
-      password: s3cr3t
+server:
+  port: 8081
+  
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: https://registryserviceneightlink.herokuapp.com/
+      
+#spring:
+#  application:
+#    name: api-gateway
+#  cloud:
+#   config:
+#      uri: https://registryserviceneightlink.herokuapp.com/
+#      username: root
+#      password: s3cr3t
 
 
